@@ -84,7 +84,7 @@ AddEventHandler('esx_luotiliivi:pukee', function()
     while not HasAnimDictLoaded(giveAnim) do
         Citizen.Wait(100)
     end
-    TaskPlayAnim(ped, giveAnim, "idle_intro", 8.0, 8.0, -1, 50, 0, false, false, false)
+    TaskPlayAnim(ped, giveAnim, "idle_intro", 8.0, 8.0, -1, 50, 0, false, false, false) -- GTa oma animaatio, vaihda jos haluat.
     Citizen.Wait(6090)
     ClearPedTasks(ped)
 end)
